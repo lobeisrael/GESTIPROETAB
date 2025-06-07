@@ -32,12 +32,8 @@
         @include('layouts.sidebar')
 
         <div class="content-body">
-
-            <div class="container-fluid mt-3">
-
+            
                 @yield('content')
-
-            </div>
             <!-- #/ container -->
         </div>
         <!--**********************************
