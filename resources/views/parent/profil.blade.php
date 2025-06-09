@@ -5,7 +5,13 @@
 
 @section('content')
             <div class="container-fluid">
-                <div class="row">
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb bg-white p-2">
+                        <li class="breadcrumb-item">Menu Parent</li>
+                        <span class="mx-2 text-muted">></span>
+                        <li class="mb-0 text-primary" aria-current="page">Suivi des Enfants</li>
+                    </ol>
+                </nav>
                     <div class="col-lg-8 col-xl-9 mx-auto">
                         <!-- Informations des parents -->
                         <div class="card mb-4">
@@ -86,10 +92,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-
-
 @endsection
 
 
