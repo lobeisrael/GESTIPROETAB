@@ -87,7 +87,7 @@
                         <p class="text-muted mb-0">Consultez toutes les annonces de l'année scolaire</p>
                     </div>
                     <div class="col-md-4 text-right">
-                        <a href="{{ route('parent.annonces.historique') }}" class="btn btn-info">
+                        <a href="{{ route('etudiant.annonces.historique') }}" class="btn btn-info">
                             <i class="fa fa-list mr-2"></i>Voir l'historique
                         </a>
                     </div>

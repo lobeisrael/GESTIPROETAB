@@ -95,7 +95,7 @@
                     <!-- Ajoute d'autres jours ici -->
                 </tbody>
             </table>
-            <a href="{{ route('parent.enfant.emploi_du_temps', ['id' => $id, 'semaine' => 1]) }}" class="btn btn-outline-primary mt-2">
+            <a href="{{ route('parent.enfant.emploi_du_temps', ['id' => 1, 'semaine' => 1]) }}" class="btn btn-outline-primary mt-2">
                 Voir l'emploi du temps de l'année <i class="fa fa-arrow-right ml-1"></i>
             </a>
         </div>
@@ -120,7 +120,7 @@
             <div class="card shadow-sm">
                 <div class="card-header bg-light d-flex justify-content-between align-items-center">
                     <h5 class="mb-0">Absences récentes</h5>
-                    <a href="{{ route('parent.enfant.absences', $id) }}" class="btn btn-outline-primary btn-sm">
+                    <a href="{{ route('parent.enfant.absences', 1) }}" class="btn btn-outline-primary btn-sm">
                         Voir plus de détails <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
@@ -170,7 +170,7 @@
     <div class="row">
         <!-- Notes -->
         <div class="col-lg-3 col-sm-6 mb-4">
-            <a href="{{ route('parent.enfant.notes', $id) }}">
+            <a href="{{ route('parent.enfant.notes', 1) }}">
                 <div class="card gradient-1 card-hover">
                     <div class="card-body">
                         <h4 class="card-title text-white">Notes</h4>
@@ -183,7 +183,7 @@
 
         <!-- Devoirs & Interros -->
         <div class="col-lg-3 col-sm-6 mb-4">
-            <a href="{{ route('parent.enfant.programmation', $id) }}">
+            <a href="{{ route('parent.enfant.programmation', 1) }}">
                 <div class="card gradient-2 card-hover">
                     <div class="card-body">
                         <h4 class="card-title text-white">Devoirs & Interros</h4>
@@ -196,7 +196,7 @@
 
         <!-- Bulletin -->
         <div class="col-lg-3 col-sm-6 mb-4">
-            <a href="{{ route('parent.enfant.bulletin', $id) }}">
+            <a href="{{ route('parent.enfant.bulletin', 1) }}">
                 <div class="card gradient-3 card-hover">
                     <div class="card-body">
                         <h4 class="card-title text-white">Bulletin</h4>
@@ -209,7 +209,7 @@
 
         <!-- Distinctions -->
         <div class="col-lg-3 col-sm-6 mb-4">
-            <a href="{{ route('parent.enfant.distinctions', $id) }}">
+            <a href="{{ route('parent.enfant.distinctions', 1) }}">
                 <div class="card gradient-4 card-hover">
                     <div class="card-body">
                         <h4 class="card-title text-white">Distinctions</h4>

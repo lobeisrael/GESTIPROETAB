@@ -116,6 +116,16 @@
                             <li><a href="#">Consulter tableau d'honneur</a></li>
                         </ul>
                     </li>
+                    <li class="nav-label">Espace Eleve</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-user menu-icon"></i>  <span class="nav-text">Menu Eleve</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('etudiant.monespace.suivi') }}"><i class="icon-note menu-icon"></i>Mon Espace</a></li>
+                            <li><a href="{{ route('etudiant.annonces') }}"><i class="icon-bell"></i>Annonces</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-label">Espace Parent</li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">

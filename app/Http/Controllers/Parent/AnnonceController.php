@@ -12,4 +12,10 @@ class AnnonceController extends Controller
     {
         return view('parent.annonces'); // fichier : resources/views/parent/annonces.blade.php
     }
+
+    //historique
+    public function historique()
+    {
+        return view('parent.annoncesHistorique'); // fichier : resources/views/parent/annonces.blade.php
+    }
 }

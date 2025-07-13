@@ -15,14 +15,12 @@
     <!-- Morrisjs -->
     <script src="{{ asset('assets/plugins/raphael/raphael.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/morris/morris.min.js') }}"></script>
-    <!-- Pignose Calender -->
-    <script src="{{ asset('assets/plugins/moment/moment.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/pg-calendar/js/pignose.calendar.min.js') }}"></script>
     <!-- ChartistJS -->
     <script src="{{ asset('assets/plugins/chartist/js/chartist.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js') }}"></script>
 
     <script src="{{ asset('assets/js/dashboard/dashboard-1.js') }}"></script>
+
 
 
 

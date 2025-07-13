@@ -46,7 +46,7 @@
     <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb bg-white rounded px-4 py-2 align-items-center">
             <li class="breadcrumb-item d-flex align-items-center text-muted mb-0">
-                <i class="fa fa-home mr-2 text-primary"></i> Menu Parent
+                <i class="fa fa-home mr-2 text-primary"></i> Menu Etudiant
             </li>
             <li class="mx-2 text-secondary">›</li>
             <li class="breadcrumb-item active text-primary font-weight-bold mb-0" aria-current="page">
@@ -87,7 +87,7 @@
                         <p class="text-muted mb-0">Consultez toutes les annonces de l'année scolaire</p>
                     </div>
                     <div class="col-md-4 text-right">
-                        <a href="{{ route('parent.annonces.historique') }}" class="btn btn-info">
+                        <a href="{{ route('etudiant.annonces.historique') }}" class="btn btn-info">
                             <i class="fa fa-list mr-2"></i>Voir l'historique
                         </a>
                     </div>
