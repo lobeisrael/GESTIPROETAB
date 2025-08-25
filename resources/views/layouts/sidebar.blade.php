@@ -102,18 +102,17 @@
                             <li><a href="#">Historique</a></li>
                         </ul>
                     </li>
-
+                    <li class="nav-label">Espace Enseignant</li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="icon-graduation menu-icon"></i> <span class="nav-text">Espace Enseignant</span>
+                            <i class="icon-graduation menu-icon"></i> <span class="nav-text">Menu Enseignant</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">Mes classes</a></li>
-                            <li><a href="#">Saisie des notes</a></li>
-                            <li><a href="#">Voir les bulletins</a></li>
-                            <li><a href="#">Téléverser les copies</a></li>
-                            <li><a href="#">Impression collantes</a></li>
-                            <li><a href="#">Consulter tableau d'honneur</a></li>
+                            <li><a href="{{ route('enseignant.dashboard') }}">Accueil</a></li>
+                            <li><a href="{{ route('enseignant.classes.index') }}">Mes classes</a></li>
+                            <li><a href="#">Emploie du temps</a></li>
+                            <li><a href="#">Documents Admin</a></li>
+                            <li><a href="#">Annonce Admin</a></li>
                         </ul>
                     </li>
                     <li class="nav-label">Espace Eleve</li>
@@ -133,8 +132,19 @@
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="{{ route('parent.profil') }}"><i class="icon-note menu-icon"></i>Mon Profil</a></li>
-                            <li><a href="{{ route('parent.enfants') }}"><i class="icon-people menu-icon"></i> Suivi des Enfants</a></li>
+                            <li><a href="{{ route('parent.enfants') }}"><i class="icon-people menu-icon"></i> Suivi Scolaire</a></li>
+                            <li><a href="{{ route('parent.scolarite') }}"><i class="fas fa-wallet menu-icon"></i> Suivi des scolarites</a></li>
                             <li><a href="{{ route('parent.annonces') }}"><i class="icon-bell"></i> Informations Admin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Espace Gestionnaire</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-user menu-icon"></i>  <span class="nav-text">Menu Gestionnaire</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('etudiant.monespace.suivi') }}"><i class="icon-note menu-icon"></i>Mon Espace</a></li>
+                            <li><a href="{{ route('etudiant.annonces') }}"><i class="icon-bell"></i>Annonces</a></li>
                         </ul>
                     </li>
 

@@ -10,6 +10,7 @@ use App\Http\Controllers\Parent\ProfilController;
 use App\Http\Controllers\Parent\EnfantController;
 use App\Http\Controllers\Parent\AnnonceController;
 use App\Http\Controllers\Parent\SuiviEnfantController;
+use App\Http\Controllers\Parent\ScolariteController;
 
 //Controller Espace Enseignant
 use App\Http\Controllers\Enseignant\DashboardEnseignant;
@@ -29,6 +30,10 @@ Route::prefix('parent')->name('parent.')->group(function () {
 
     // Liste des enfants
     Route::get('/enfants', [EnfantController::class, 'index'])->name('enfants');
+
+    //Suivi de scolarite ScolariteController
+    Route::get('/paiements', [ScolariteController::class, 'index'])->name('scolarite');
+    Route::get('/paiementsMatricule', [ScolariteController::class, 'show'])->name('scolariteshow');
 
     // Annonces de l'administration
     Route::get('/annonces', [AnnonceController::class, 'index'])->name('annonces');
@@ -80,9 +85,19 @@ Route::prefix('enseignant')
 
         // Mes classes (tout dans ClasseController)
         Route::get('/classes', [ClasseController::class, 'index'])->name('classes.index');
-        Route::get('/classes/{classe}', [ClasseController::class, 'show'])->name('classes.show');
 
-        // Notes
+
+        Route::prefix('/classes/{classe}')
+        ->name('classes.')
+        ->group(function () {
+            Route::get('/', [ClasseController::class, 'show'])->name('show');
+            Route::get('/ListEleve', [ClasseController::class, 'listEleve'])->name('listEleve');
+            Route::get('/note/edit', [ClasseController::class, 'listEleve'])->name('eleve.show');
+            Route::get('/note/edit', [ClasseController::class, 'listEleve'])->name('notes.edit');
+        });
+
+
+
         Route::get('/classes/{classe}/notes', [ClasseController::class, 'notesIndex'])->name('classes.notes.index');
         Route::post('/classes/{classe}/notes', [ClasseController::class, 'notesStore'])->name('classes.notes.store');
 

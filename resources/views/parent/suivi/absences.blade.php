@@ -73,7 +73,7 @@
             </li>
             <li class="mx-2 text-secondary">›</li>
             <li class="breadcrumb-item">
-                <a href="{{ route('parent.enfants') }}" class="text-dark">Suivi des Enfants</a>
+                <a href="{{ route('parent.enfants') }}" class="text-dark">Suivi Scolaire</a>
             </li>
             <li class="mx-2 text-secondary">›</li>
             <li class="breadcrumb-item">
